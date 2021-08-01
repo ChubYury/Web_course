@@ -1,0 +1,313 @@
+
+//*********Шапка*******//
+.hedi
+    //height: 72px
+    //margin-bottom: 32px
+    box-shadow: 0px 5px 6px -5px rgba(34, 60, 80, 0.6)
+    &-logo
+        margin: 31px 8px 31px 8px
+    &-bas
+        width: 20px
+        height: 23px
+        margin: 0px 0px 0px 3%
+
+.start
+    display: flex
+    justify-content: flex-start
+.end
+    display: flex
+    justify-content: flex-end
+    align-items: center
+
+//*********Menu**********//
+
+.nav-menu
+    display: flex
+    margin: 0px 0px 50px 0px
+    border-bottom: 1px solid #BFBFBF
+    & a
+        color: #626262
+        text-decoration: none
+        font-size: 16px
+        text-align: center
+        +regular
+        padding: 32px 40px 29px 0px
+    & a:hover
+        color: #327430
+
+@media (max-width: 575px)
+
+    .nav-menu
+        display: none
+
+//*********Страница №1******//
+
+.tc
+    &_wrap
+        border-bottom: 1px solid #BFBFBF
+        padding: 0px 0px 2px 0px
+        margin: 55px 0px 8px 0px
+    &-titlecards
+        color: #BFBFBF
+        font-size: 16px
+        +regular
+    &-subtitlecards
+        margin: 50px 0px 16px 0px
+        font-size: 22px
+        +regular
+        overflow: hidden
+
+.card
+    width: 100%
+    height: 370px
+    position: relative
+    margin: 0px 6px 8px 0px
+    &-img
+        width: 100%
+        height: 256px
+    &-title
+        margin: 16px 0px 3px 0px
+        color: #1D1D1D
+        font-size: 16px
+        font-weight: 600
+        +regular
+        overflow-y: hidden
+    &-subtitle
+
+        margin: 3px 0px 2px 0px
+        color: #626262
+        font-size: 14px
+        +regular
+.link
+    display: block
+    position: absolute
+    width: 100%
+    height: 100%
+    &:hover
+        opacity: 0.2
+
+    &-txt
+        margin: 4px 0px 0px 0px
+        color: #1D1D1D
+        font-size: 13px
+        font-weight: 600
+        +regular
+    &:hover
+        background: #FAFAFA
+//*********Страница №2******//
+
+.baner
+    background-image: url(../img/photo.jpg)
+    background-repeat: no-repeat
+    background-size: 100% 100%
+    width: 100%
+
+    &-plate
+        height: 204px
+        background: #ffffff
+        margin: 80px 0px 80px 0px
+        z-index: 50
+
+    &-title
+        font-size: 36px
+        +regular
+        margin: 38px 0px 60px 0%
+        overflow: hidden
+    &-text
+        font-size: 14px
+        +regular
+        color: #626262
+        margin: 0px 0px 0px 0%
+        padding: 9px 16px 8px 16px
+    &-textmin
+        font-size: 12px
+        +regular
+        color: #ffffff
+        background: #000
+        border-radius: 50px
+        margin: 0px 10px 0px 0%
+        padding: 9px 16px 8px 16px
+
+@media (max-width: 575px)
+    .baner
+        height: 255px
+        margin-bottom: 200px
+
+        &-plate
+            position: relative
+            width: 100%
+            height: 180px
+            top: 100px
+            box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2)
+            z-index: 10
+        &-title
+            font-size: 26px
+            +regular
+            margin: 24px 0px 40px 0%
+        &-textmin
+            font-size: 12px
+            +regular
+            color: #ffffff
+            background: #000
+            border-radius: 50px
+            width: 66px
+            margin: 10px auto 10px auto
+            padding: 9px 16px 8px 16px
+
+.cards-title
+    font-size: 22px
+    +regular
+    margin: 0px 0px 32px 0px
+
+.card2
+    display: flex
+    justify-content: space-between
+    width: 100%
+    height: 160px
+    margin: 0px 6px 8px 0px
+    border: 1px solid #BFBFBF
+    &-img
+        width: 40%
+        height: 160px
+    &-title
+        margin: 16px 0px 3px 24px
+        color: #1D1D1D
+        font-size: 16px
+        font-weight: 600
+        +regular
+    &-subtitle
+        position: relative
+        top: -45px
+        margin-left: 24px
+        color: #626262
+        font-size: 14px
+        +regular
+    &-txt
+        position: relative
+        bottom: 16px
+        margin-left: 24px
+        color: #1D1D1D
+        font-size: 13px
+        font-weight: 600
+        +regular
+    &:hover
+        background: #FAFAFA
+.twrap
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+@media (max-width: 575px)
+    .cards-title
+        margin: 0px auto 32px 40%
+        &::after
+            content: ""
+            display: block
+            position: relative
+            top: 12px
+            left: 20px
+            width: 50px
+            border-bottom: 2px solid black
+
+    .card2
+        min-width: 308px
+        height: 102px
+        border: none
+        border-bottom: 1px solid #BFBFBF
+        &-img
+            width: 102px
+            height: 102px
+        &-title
+            font-size: 14px
+        &-subtitle
+            top: -20px
+            font-size: 13px
+        &-txt
+            bottom: 16px
+            font-size: 15px
+@media (max-width: 344px)
+    .card2-title
+        width: 170px
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+.min
+    min-width: 308px
+//*********Подвал******//
+
+.foot
+    background: #262626
+    color: #FFFFFF
+
+    &-logow
+        margin: 56px 0px 32px 0px
+        padding: 0px 0px 40px 0px
+        border-bottom: 1px solid #BFBFBF
+    &-logo
+        width: 191px
+        height: 20px
+    &-link
+        font-size: 13px
+        +regular
+        color: white
+        line-height: 40px
+        margin: 0px 0px 23px 0px
+        text-decoration: none
+    &-socW
+        margin: 48px 0px 40px 0px
+        padding: 40px 0px 40px 0px
+        border-top: 1px solid #BFBFBF
+        border-bottom: 1px solid #BFBFBF
+    &-lend
+        padding-bottom: 40px
+
+.select
+    display: flex
+    margin: 0px 0px 32px -14px
+    width: 100%
+    select
+        display: inline-block
+        width: 176px
+        height: 40px
+        cursor: pointer
+        padding: 10px 33px
+        outline: 0
+        border: 1px solid white
+        border-radius: 0
+        background: #262626
+        color: #f5f0f0
+        &::-ms-expand
+            display: none
+        &:hover
+            width: 176px
+            color: rgb(255, 253, 253)
+            background: #262626
+        &:focus
+            width: 176px
+            color: rgb(255, 253, 253)
+            background: #262626
+        &:disabled
+            opacity: 0.5
+            pointer-events: none
+
+.globe
+    position: relative
+    width: 12px
+    height: 16px
+    top: 12px
+    left: 25px
+    border: 1px solid black
+
+.soce
+    width: 24px
+    height: 24px
+
+.ub
+    font-size: 16px
+    +regular
+    margin-bottom: 16px
+.green
+    color: #49A144
+    margin-right: 2px
+
+//*******************************************//    
